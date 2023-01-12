@@ -1,5 +1,31 @@
-@import "./base"
+@import "./base";
 
-@import "./components"
+@import "./components";
 
-@import "./layout"
+@import "./layout";
+
+.container {
+    border: 2px solid white;
+    margin: 0 1rem;
+
+}
+
+.header-container{
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-container {
+
+    height: 30rem;
+    h1 {
+        font-size: 5rem;
+    }
+
+    p {
+        margin-top: 3rem;
+    }
+
+}
