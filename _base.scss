@@ -4,13 +4,12 @@ $font-body: "Inter", sans-serif;
 $font-display: "Cormorant", sans-serif;
 
 $color-primary: #363636;
-$colour-secondary: #B4A7E2;
+$colour-secondary: #d2b1df;
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: $font-body;
     background-color: $color-primary;
     color: $colour-secondary;
 }
