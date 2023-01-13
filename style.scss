@@ -5,7 +5,7 @@
 @import "./layout";
 
 .container {
-    border: 2px solid white;
+    border: 2px solid none;
     margin: 2rem 2rem;
 }
 
@@ -43,7 +43,6 @@
     justify-content: center;
     align-items: center;
     
-
     h2 {
         font-size: 2rem;
         font-family: $font-display;
@@ -53,27 +52,47 @@
         margin: 4rem;
     }
     p {
+        margin-top: 1rem;
+        font-size: 1rem;
+        text-align: justify;
         font-family: $font-body;
+
     }
 
 }
 
-.techskill_container {
+.techskill-container {
 
-    font-family: $font-body;
+    h2 {
+        font-size: 2rem;
+        font-family: $font-display;
+    }
 
-    .p {
+    p {
+        margin-top: 3rem;
+        font-size: 1rem;
+        text-align: justify;
         font-family: $font-body;
     }
-    .skill-icons {
 
+    .skill__icons {
+        margin-top: 3rem;
+        
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
         flex-wrap: wrap;
-        
+        text-align: center;
+
+        font-family: $font-body;
+        font-size: 1rem;
+        font-weight: 400;
+
     }
 }
+
+
 
 .project-container {
    
@@ -115,4 +134,38 @@
             grid-row-end: 3;
         }
     }
+}
+
+.contact-container {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    h1 {
+        font-size: 5rem;
+        font-family: $font-display;
+        font-weight: 400;
+    }
+
+    button {
+        border:2px solid $colour-secondary;
+        margin-top: 3.5rem;
+        font-size: 1rem;
+        font-family: $font-body;
+        height: 5rem;
+        width: 17rem;
+    }
+}
+
+.footer-container {
+    height: 7rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: $colour-secondary;
 }
