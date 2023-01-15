@@ -53,6 +53,7 @@ a:link {
 }
 .about-container h2 {
   font-size: 2rem;
+  font-weight: 700;
   font-family: "Cormorant", sans-serif;
 }
 .about-container img {
@@ -68,6 +69,7 @@ a:link {
 
 .techskill-container h2 {
   font-size: 2rem;
+  font-weight: 700;
   font-family: "Cormorant", sans-serif;
 }
 .techskill-container p {
@@ -78,21 +80,33 @@ a:link {
 }
 .techskill-container .skill__icons {
   margin-top: 3rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  text-align: center;
+  margin-bottom: 5rem;
   font-family: "Inter", sans-serif;
   font-size: 1rem;
   font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
 }
-.techskill-container .skill__icons .skill__icons--color {
-  background-color: blue;
-  fill: red;
+.techskill-container .skill__icons--color {
+  background-color: red;
+  fill: aqua;
+}
+.techskill-container .skill__icons--position {
+  flex-basis: 33.333%;
 }
 
+.project-container h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.project-container h4 {
+  font-size: 2rem;
+  font-weight: 400;
+}
 .project-container .portfolio__project {
   display: grid;
   grid-template-columns: 5fr 1fr 1fr;
@@ -136,6 +150,7 @@ a:link {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .contact-container h1 {
   font-size: 5rem;
@@ -153,33 +168,18 @@ a:link {
 
 .footer-container {
   height: 7rem;
-  /*display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-
-  justify-content: space-evenly;
-  align-items: center;
-  color: $colour-secondary;*/
-  /*.footer-icons__cv {
-      grid-column-start: 1;
-      grid-column-end: 2;
-  }
-  .footer-icons__git {
-      grid-column-start: 2;
-      grid-column-end: 3;
-  }
-  .footer-icons__linkedin {
-      grid-column-start: 3;
-      grid-column-end: 4;
-  }*/
 }
 .footer-container .footer-icons {
   display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
-
 @media screen and (min-width: 768px) {
   body {
     margin: 3rem;
   }
+
   .header-container {
     height: 6rem;
     font-size: 3rem;
@@ -193,6 +193,7 @@ a:link {
     font-size: 1.25rem;
     font-weight: 400;
   }
+
   .title-container h1 {
     font-size: 8rem;
   }
@@ -201,6 +202,7 @@ a:link {
     width: 38rem;
     height: 8rem;
   }
+
   .about-container {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -230,10 +232,24 @@ a:link {
     grid-row-start: 1;
     grid-row-end: 3;
   }
+
   .techskill-container h2 {
     font-size: 3rem;
   }
   .techskill-container p {
     font-size: 1.25rem;
   }
-}/*# sourceMappingURL=style.css.map */
+  .techskill-container .skill__icons--position {
+    flex-basis: 11.111%;
+  }
+
+  .project-container .portfolio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .project-container .portfolio__project {
+    flex-basis: 33.333%;
+  }
+}
