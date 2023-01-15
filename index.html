@@ -10,7 +10,14 @@
 
   <body>
     <header class="header-container container">
-      <a href="#" class="header__title">NAME.</a>
+      <a href="#" class="header__title">NAVINA JAYANTHAN.</a>
+
+      <nav class = "header__navigation"> 
+        <a href="#">About</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+      </nav>
+      
     </header>
 
     <section class="container title-container">
@@ -52,7 +59,8 @@
 
         <div>
             <img src = "./images/skills-icons/Git.svg"
-            alt = "git-icon">
+            alt = "git-icon"
+            class="skill__icons--color">
             <h3>Git</h3>
         </div>
 
@@ -221,11 +229,18 @@
     </section>
 
     <footer class="footer-container container">
-        <div class="footer-icons">
-            <img src = "./images/footer-icons/cv.svg">
-            <img src = "./images/footer-icons/GitHub.svg" href ="https://github.com/navina321">
-            <img src = "./images/footer-icons/linkedin.svg">
-        </div>
+        <section class="footer-icons">
+            <img src = "./images/footer-icons/cv.svg"
+            class = "footer-icons__cv">
+
+            <img src = "./images/footer-icons/GitHub.svg" 
+            class = "footer-icons__git">
+
+            <img src = "./images/footer-icons/linkedin.svg"
+            class = "footer-icons__linkedin">
+        </section>
     </footer>
+
   </body>
+
 </html>
