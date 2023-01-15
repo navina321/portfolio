@@ -116,7 +116,8 @@ a:link {
   margin-top: 2rem;
 }
 .project-container .portfolio__project .portfolio__project--display {
-  width: 19rem;
+  width: 20.2rem;
+  height: 16.5rem;
   padding: 0;
   border: 0.5rem solid #363636;
   grid-column-start: 1;
@@ -175,6 +176,7 @@ a:link {
   justify-content: space-evenly;
   align-items: center;
 }
+
 @media screen and (min-width: 768px) {
   body {
     margin: 3rem;
@@ -188,7 +190,7 @@ a:link {
   }
   .header-container .header__navigation {
     display: flex;
-    justify-content: end;
+    justify-content: space-evenly;
     font-family: "Inter", sans-serif;
     font-size: 1.25rem;
     font-weight: 400;
@@ -251,5 +253,9 @@ a:link {
   }
   .project-container .portfolio__project {
     flex-basis: 33.333%;
+  }
+  .project-container .portfolio__project--display {
+    width: 27.65rem;
+    height: 16.5rem;
   }
 }

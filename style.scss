@@ -128,7 +128,8 @@
         margin-top: 2rem;
 
         .portfolio__project--display {
-            width: 19rem;
+            width: 20.2rem;
+            height: 16.5rem;
             padding: 0;
             border: 0.5rem solid $color-primary;
 
@@ -187,6 +188,7 @@
         height: 5rem;
         width: 17rem;
     }
+
 }
 
 .footer-container {
@@ -198,11 +200,7 @@
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        
-        img {
-            
-        }
-        
+    
     }
     
 }
@@ -225,7 +223,7 @@
         .header__navigation {
            
             display: flex;
-            justify-content: end;
+            justify-content: space-evenly;
     
             font-family: $font-body;
             font-size: 1.25rem;
@@ -286,8 +284,6 @@
 
     .techskill-container {
 
-       // display: grid;
-    
         h2 {
             font-size: 3rem;
         }
@@ -313,6 +309,10 @@
             &__project {
                 flex-basis: 33.333%;
                 
+                &--display {
+                    width: 27.65rem;
+                    height: 16.5rem
+                }
             }
         }
 
