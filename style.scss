@@ -4,6 +4,7 @@
 
 @import "./layout";
 
+
 .container {
     border: 2px solid none;
     margin: 2rem 2rem;
@@ -137,6 +138,8 @@
             grid-column-end: 4;
             grid-row-start: 1;
             grid-row-end: 2;
+
+            background-color: $color-background;
         }
 
         .portfolio__project--title {
@@ -162,6 +165,42 @@
             grid-row-start: 2;
             grid-row-end: 3;
         }
+    }
+}
+
+.experience-container {
+    margin-top: 4rem;
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+        font-weight: 400;
+        margin: 2rem 0rem;
+        border-bottom:2px solid lightslategray;
+        width: 36.125rem;
+    }
+}
+
+.interests-container {
+    margin-top: 4rem;
+    
+    h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+        font-weight: 400;
+        margin: 2rem 0rem;
+        border-bottom:2px solid lightslategray;
+        width: 36.125rem;
     }
 }
 
@@ -193,6 +232,7 @@
 
 .footer-container {
     height: 7rem;
+    margin: 1rem;
 
     .footer-icons {
 
@@ -228,6 +268,7 @@
             font-family: $font-body;
             font-size: 1.25rem;
             font-weight: 400;
+            margin: 2rem;
         }
     }
 
@@ -284,12 +325,21 @@
 
     .techskill-container {
 
+        .skill-text {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+        }
         h2 {
             font-size: 3rem;
         }
 
         p {
             font-size: 1.25rem;
+
+            height: 3.25rem;
+            width: 69.4rem;
         }
 
         .skill__icons--position {
@@ -303,8 +353,13 @@
                         
             display: flex;
             flex-direction: row;
-            justify-content: space-evenly;
+            justify-content: space-between;
             flex-wrap: wrap;
+            align-items: center;
+
+
+            height: 49.5rem;
+            width: 82.95rem;
 
             &__project {
                 flex-basis: 33.333%;
@@ -318,4 +373,8 @@
 
     }
     
+    .footer-icons {
+        margin-top: 8rem;
+        
+    }
 }

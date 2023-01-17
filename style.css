@@ -124,6 +124,7 @@ a:link {
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
+  background-color: #545454;
 }
 .project-container .portfolio__project .portfolio__project--title {
   grid-column-start: 1;
@@ -144,6 +145,38 @@ a:link {
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
+}
+
+.experience-container {
+  margin-top: 4rem;
+}
+.experience-container h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.experience-container p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 2rem 0rem;
+  border-bottom: 2px solid lightslategray;
+  width: 36.125rem;
+}
+
+.interests-container {
+  margin-top: 4rem;
+}
+.interests-container h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.interests-container p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 2rem 0rem;
+  border-bottom: 2px solid lightslategray;
+  width: 36.125rem;
 }
 
 .contact-container {
@@ -169,6 +202,7 @@ a:link {
 
 .footer-container {
   height: 7rem;
+  margin: 1rem;
 }
 .footer-container .footer-icons {
   display: flex;
@@ -194,6 +228,7 @@ a:link {
     font-family: "Inter", sans-serif;
     font-size: 1.25rem;
     font-weight: 400;
+    margin: 2rem;
   }
 
   .title-container h1 {
@@ -235,11 +270,18 @@ a:link {
     grid-row-end: 3;
   }
 
+  .techskill-container .skill-text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
   .techskill-container h2 {
     font-size: 3rem;
   }
   .techskill-container p {
     font-size: 1.25rem;
+    height: 3.25rem;
+    width: 69.4rem;
   }
   .techskill-container .skill__icons--position {
     flex-basis: 11.111%;
@@ -248,8 +290,11 @@ a:link {
   .project-container .portfolio {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
+    align-items: center;
+    height: 49.5rem;
+    width: 82.95rem;
   }
   .project-container .portfolio__project {
     flex-basis: 33.333%;
@@ -257,5 +302,9 @@ a:link {
   .project-container .portfolio__project--display {
     width: 27.65rem;
     height: 16.5rem;
+  }
+
+  .footer-icons {
+    margin-top: 8rem;
   }
 }
