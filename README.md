@@ -17,3 +17,4 @@ The portfolio includes the following sections:
 - Contact
 - Links to CV, GitHub & LinkedIn
 
+![image](https://user-images.githubusercontent.com/81630548/212962624-d302eff0-e777-43de-9c35-849b77fcfe45.png)
