@@ -16,3 +16,4 @@ The portfolio includes the following sections:
 - Experience & Interests
 - Contact
 - Links to CV, GitHub & LinkedIn
+
